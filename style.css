@@ -1,0 +1,49 @@
+body {
+    width: 90%;
+    max-width: 1000px;
+    background-color: lavender;
+}
+
+#randomColor {
+    margin-left: 70px;
+    border: none;
+    color: white;
+    background-color: teal;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 12px;  
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .grid {
+    height: 400px;
+    width: 400px;
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: repeat(16, 25px [col-start]);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .my-color-class {
+      background-color: black;
+  }
+
+.reset {
+
+    text-align: center;
+    margin-top: 18px;
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 16px;  
+}
+
+.reset:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
