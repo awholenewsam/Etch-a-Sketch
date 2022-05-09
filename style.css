@@ -1,41 +1,58 @@
 body {
-    width: 90%;
-    max-width: 1000px;
     background-color: lavender;
 }
 
+#header {
+    font-family: 'VT323', monospace;
+}
+
+#buttons {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+}
+
 #randomColor {
-    margin-left: 70px;
+    margin-right: 50px;
     border: none;
     color: white;
     background-color: teal;
     padding: 8px 15px;
     border-radius: 8px;
-    font-size: 12px;  
-
+    font-size: 16px;  
 }
 
-* {
-    box-sizing: border-box;
-  }
+p{
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
   
-  .grid {
-    height: 400px;
-    width: 400px;
-    margin-left: 300px;
+  #boxes {
+    height: 640px;
+    width: 640px;
     display: grid;
-    grid-template-columns: repeat(16, 25px [col-start]);
+    grid-template-rows: repeat(var(--grid-rows), 2fr);
+    grid-template-columns: repeat(var(--grid-cols), 2fr);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
-  .my-color-class {
-      background-color: black;
+  .grid-item {
+      padding: 1em;
+      text-align: center;
   }
 
 .reset {
 
     text-align: center;
-    margin-top: 18px;
     background-color: teal;
     border: none;
     color: white;
@@ -45,5 +62,9 @@ body {
 }
 
 .reset:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#randomColor:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
