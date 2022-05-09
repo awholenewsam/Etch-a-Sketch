@@ -10,13 +10,17 @@
 </head>
 <body>
     <center><h1 id="header">Etch-a-Sketch</h1></center>
-
-    <div class="container">
-        <button id="randomColor">Rainbow Mode</button>
-        <div class=" grid"></div>
+    <div id="buttons">
+    <button id="randomColor">Rainbow Mode</button>
+    <div class="slide container">
+        <input type="range" min="2" max="100" value="16" id="slider">
+            <p class="value">16</p>
     </div>
-
-    <center><button class="reset">Reset</button></center>
+    <button class="reset">Reset</button>
+    </div>
+    <div class="container">
+        <div id="boxes"></div>
+    </div>
 
     <script src="javascript.js"></script> 
 </body>
